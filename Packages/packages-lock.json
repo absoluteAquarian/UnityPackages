@@ -1,5 +1,21 @@
 {
   "dependencies": {
+    "com.johnrbaglio.absolutecommons": {
+      "version": "file:com.johnrbaglio.absolutecommons",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.johnrbaglio.absolutecommons.networking": {
+      "version": "file:com.johnrbaglio.absolutecommons.networking",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.johnrbaglio.absolutecommons": "1.0.0",
+        "com.unity.netcode.gameobjects": "1.13.0",
+        "com.veriorpies.parrelsync": "https://github.com/VeriorPies/ParrelSync.git?path=/ParrelSync"
+      }
+    },
     "com.unity.burst": {
       "version": "1.8.12",
       "depth": 2,

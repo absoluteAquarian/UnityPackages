@@ -1,0 +1,14 @@
+{
+	"name": "com.johnrbaglio.absolutecommons.networking",
+	"displayName": "AbsoluteCommons.Networking",
+	"version": "1.0.0",
+	"unity": "2022.3",
+	"description": "AbsoluteCommons.Networking is an extension of AbsoluteCommons for usage with: Netcode for GameObjects, ParrelSync",
+	"license": "MIT",
+	"keywords": [ "Utils", "Extensions", "Editor", "Networking" ],
+	"dependencies": {
+		"com.johnrbaglio.absolutecommons": "1.0.0",
+		"com.unity.netcode.gameobjects": "1.13.0",
+		"com.veriorpies.parrelsync": "https://github.com/VeriorPies/ParrelSync.git?path=/ParrelSync"
+	}
+}
