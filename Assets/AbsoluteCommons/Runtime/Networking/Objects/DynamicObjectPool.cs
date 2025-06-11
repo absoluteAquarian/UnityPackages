@@ -6,7 +6,7 @@ using Unity.Netcode;
 using UnityEngine;
 
 namespace AbsoluteCommons.Runtime.Networking.Objects {
-	[AddComponentMenu("Absolute Commons/Objects/Dynamic Object Pool")]
+	[AddComponentMenu("Absolute Commons/Networking/Objects/Dynamic Object Pool")]
 	public class DynamicObjectPool : NetworkBehaviour {
 		[SerializeField, ReadOnly] private GameObject _prefab;
 		[SerializeField] private int _initialCapacity = 10;

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Pool;
 
-namespace AbsoluteCommons.Runtime.Networking.Objects {
+namespace AbsoluteCommons.Runtime.Objects {
 	public class EventObjectPool<T> where T : Object {
 		public T prefab;
 
