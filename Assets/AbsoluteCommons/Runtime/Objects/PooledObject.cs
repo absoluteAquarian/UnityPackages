@@ -28,5 +28,10 @@ namespace AbsoluteCommons.Runtime.Objects {
 			Pool.Return(gameObject);
 			_index = -1;
 		}
+
+		private void OnDestroy() {
+			_pool = null;
+			_index = -1;
+		}
 	}
 }

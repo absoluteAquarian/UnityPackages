@@ -1,4 +1,4 @@
-using AbsoluteCommons.Editor.Attributes;
+using AbsoluteCommons.Mutual.Attributes;
 using UnityEditor;
 using UnityEngine;
 

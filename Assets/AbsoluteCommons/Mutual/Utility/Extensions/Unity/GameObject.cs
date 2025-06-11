@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using AbsoluteCommons.Runtime.Objects;
+using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
@@ -79,6 +80,17 @@ namespace AbsoluteCommons.Mutual.Utility {
 			}
 
 			return sb.ToString();
+		}
+
+		public static void DestroyOrReturnToPool(ref GameObject obj) {
+			if (obj) {
+				if (obj.TryGetComponent(out PooledObject pooled))
+					pooled.ReturnToPool();
+				else
+					Object.Destroy(obj);
+
+				obj = null;
+			}
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿using AbsoluteCommons.Objects;
+﻿using AbsoluteCommons.Runtime.Networking.Objects;
 using Unity.Netcode;
 using UnityEngine;
 
