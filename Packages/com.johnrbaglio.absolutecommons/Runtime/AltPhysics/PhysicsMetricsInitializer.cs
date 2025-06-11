@@ -1,4 +1,4 @@
-﻿using AbsoluteCommons.Mutual.Attributes;
+﻿using AbsoluteCommons.Runtime.Attributes;
 using UnityEngine;
 
 namespace AbsoluteCommons.Runtime.AltPhysics {

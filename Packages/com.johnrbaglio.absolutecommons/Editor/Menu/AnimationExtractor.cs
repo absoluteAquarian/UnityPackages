@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 #if UNITY_EDITOR
-namespace AbsoluteCommons.Edtiro.Menu {
+namespace AbsoluteCommons.Edtior.Menu {
 	// Taken from: https://stackoverflow.com/questions/22662008/how-to-create-anim-file-from-fbx-file-in-unity
 	public class AnimationExtractor : MonoBehaviour {
 		[MenuItem("Assets/Extract Animation")]

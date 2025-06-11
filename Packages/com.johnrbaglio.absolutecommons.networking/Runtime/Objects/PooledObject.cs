@@ -1,4 +1,4 @@
-﻿using AbsoluteCommons.Mutual.Attributes;
+﻿using AbsoluteCommons.Runtime.Attributes;
 using Unity.Netcode;
 using UnityEngine;
 

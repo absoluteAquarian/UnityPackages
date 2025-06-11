@@ -1,10 +1,10 @@
-﻿using AbsoluteCommons.Mutual.Utility;
+﻿using AbsoluteCommons.Runtime.Utility;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AbsoluteCommons.Mutual.Collections {
+namespace AbsoluteCommons.Runtime.Collections {
 	/// <summary>
 	///     Represents an unordered collection of natural numbers and provides O(1) operations on it
 	/// </summary>

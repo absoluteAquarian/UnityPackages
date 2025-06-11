@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	// Fade code taken from: https://forum.unity.com/threads/standard-material-shader-ignoring-setfloat-property-_mode.344557/
 
 	public enum BlendMode {

@@ -1,7 +1,7 @@
-﻿using AbsoluteCommons.Mutual.Animation;
+﻿using AbsoluteCommons.Runtime.Animation;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static void IncrementFloat(this Animator animator, string parameterName, float value) {
 			if (animator.HasParameter(parameterName))

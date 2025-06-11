@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static GameObject FindChildRecursively(this GameObject parent, string name) {
 			Queue<GameObject> scanQueue = new();

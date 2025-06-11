@@ -2,7 +2,7 @@
 using Unity.Netcode;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Networking.Utility {
 	partial class TypeExtensions {
 		public static void DestroyOrDespawnAndSetNull(ref GameObject obj) {
 			if (obj) {

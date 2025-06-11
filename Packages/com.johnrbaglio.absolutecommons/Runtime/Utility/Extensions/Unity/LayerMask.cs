@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static LayerMask Combine(this LayerMask mask, LayerMask other) {
 			return mask | other;

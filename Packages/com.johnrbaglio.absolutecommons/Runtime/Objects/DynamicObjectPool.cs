@@ -1,8 +1,8 @@
-﻿using AbsoluteCommons.Mutual.Utility;
+﻿using AbsoluteCommons.Runtime.Utility;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
-using AbsoluteCommons.Mutual.Attributes;
+using AbsoluteCommons.Runtime.Attributes;
 
 namespace AbsoluteCommons.Runtime.Objects {
 	[AddComponentMenu("Absolute Commons/Objects/Dynamic Object Pool")]

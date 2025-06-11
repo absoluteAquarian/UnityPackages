@@ -2,7 +2,7 @@
 using Unity.Netcode;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Networking.Utility {
 	partial class TypeExtensions {
 		public static void SmartDespawn(this NetworkObject obj, bool destroy, bool includeSelf = true) {
 			if (!NetworkManager.Singleton.IsServer)

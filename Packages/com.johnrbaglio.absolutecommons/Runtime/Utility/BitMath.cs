@@ -1,4 +1,4 @@
-﻿namespace AbsoluteCommons.Mutual.Utility {
+﻿namespace AbsoluteCommons.Runtime.Utility {
 	public static class BitMath {
 		public static byte AsByte(this bool flag) => (byte)(flag ? 1 : 0);
 

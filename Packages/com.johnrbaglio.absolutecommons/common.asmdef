@@ -1,7 +1,9 @@
 {
 	"name": "AbsoluteCommons",
 	"references": [],
-	"includePlatforms": [ "Editor" ],
+	"includePlatforms": [
+		"Editor"
+	],
 	"excludePlatforms": [],
 	"allowUnsafeCode": false,
 	"overrideReferences": false,

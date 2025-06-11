@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	public static class RotationMath {
 		public static Quaternion RotationTo(Vector3 from, Vector3 to) => Quaternion.LookRotation(to - from, Vector3.up);
 

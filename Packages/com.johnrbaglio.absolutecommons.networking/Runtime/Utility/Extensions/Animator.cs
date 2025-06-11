@@ -1,7 +1,8 @@
-﻿using Unity.Netcode.Components;
+﻿using AbsoluteCommons.Runtime.Utility;
+using Unity.Netcode.Components;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Networking.Utility {
 	partial class TypeExtensions {
 		public static void NetForceTrigger(this Animator animator, string triggerName) {
 			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static IEnumerable<T> ToEnumerable<T>(this IEnumerator<T> enumerator, bool resetOnCompletion = false) {
 			if (enumerator is null)

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static void SetRotationWithPivot(this Transform transform, Vector3 pivot, Quaternion rotation) {
 			Vector3 offset = pivot - transform.position;

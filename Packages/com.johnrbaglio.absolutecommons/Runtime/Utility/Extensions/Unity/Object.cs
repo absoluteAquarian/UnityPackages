@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	partial class TypeExtensions {
 		public static void DestroyAndSetNull(ref Object obj) {
 			if (obj) {

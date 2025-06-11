@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Animation {
+namespace AbsoluteCommons.Runtime.Animation {
 	// Inspired by: https://gist.github.com/hasanbayatme/f7f1d9d0f8470b718fda836f6668c215
 	public static class AnimatorTracker {
 		private static readonly Dictionary<Animator, HashSet<int>> _animatorToParameters = new();

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	public static class VectorMath {
 		public static float DistanceSquared(Vector3 a, Vector3 b) => Vector3.SqrMagnitude(a - b);
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine.UIElements;
 using UnityEngine.UIElements.Experimental;
 
-namespace AbsoluteCommons.Mutual.Utility {
+namespace AbsoluteCommons.Runtime.Utility {
 	public static class EasingExtensions {
 		public static float Ease(EasingMode mode, float t) {
 			return mode switch {

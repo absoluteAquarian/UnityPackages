@@ -2,7 +2,7 @@ using UnityEngine;
 
 // Derived from: https://discussions.unity.com/t/how-to-make-a-readonly-property-in-inspector
 
-namespace AbsoluteCommons.Mutual.Attributes {
+namespace AbsoluteCommons.Runtime.Attributes {
 	/// <summary>
 	/// Display a field as read-only in the inspector.
 	/// CustomPropertyDrawers will not work when this attribute is used.

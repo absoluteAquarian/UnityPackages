@@ -1,4 +1,4 @@
-﻿using AbsoluteCommons.Mutual.Utility;
+﻿using AbsoluteCommons.Networking.Utility;
 using Unity.Netcode;
 
 namespace AbsoluteCommons.Networking {
