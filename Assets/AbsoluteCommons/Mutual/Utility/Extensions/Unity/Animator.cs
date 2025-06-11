@@ -1,5 +1,4 @@
 ﻿using AbsoluteCommons.Mutual.Animation;
-using Unity.Netcode.Components;
 using UnityEngine;
 
 namespace AbsoluteCommons.Mutual.Utility {
@@ -21,25 +20,11 @@ namespace AbsoluteCommons.Mutual.Utility {
 			}
 		}
 
-		public static void NetForceTrigger(this Animator animator, string triggerName) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.ForceTrigger(triggerName);
-			else
-				animator.ForceTrigger(triggerName);
-		}
-
 		public static void ForceTrigger(this Animator animator, int triggerHash) {
 			if (animator.HasParameter(triggerHash)) {
 				animator.ResetTrigger(triggerHash);
 				animator.SetTrigger(triggerHash);
 			}
-		}
-
-		public static void NetForceTrigger(this Animator animator, int triggerHash) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.ForceTrigger(triggerHash);
-			else
-				animator.ForceTrigger(triggerHash);
 		}
 
 		public static bool HasParameter(this Animator animator, string parameterName) => AnimatorTracker.HasParameter(animator, parameterName);
@@ -51,23 +36,9 @@ namespace AbsoluteCommons.Mutual.Utility {
 				animator.SetTrigger(parameterName);
 		}
 
-		public static void NetSetTriggerSafely(this Animator animator, string parameterName) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.SetTriggerSafely(parameterName);
-			else
-				animator.SetTriggerSafely(parameterName);
-		}
-
 		public static void SetTriggerSafely(this Animator animator, int parameterHash) {
 			if (animator.HasParameter(parameterHash))
 				animator.SetTrigger(parameterHash);
-		}
-
-		public static void NetSetTriggerSafely(this Animator animator, int parameterHash) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.SetTriggerSafely(parameterHash);
-			else
-				animator.SetTriggerSafely(parameterHash);
 		}
 
 		public static void ResetTriggerSafely(this Animator animator, string parameterName) {
@@ -75,23 +46,9 @@ namespace AbsoluteCommons.Mutual.Utility {
 				animator.ResetTrigger(parameterName);
 		}
 
-		public static void NetResetTriggerSafely(this Animator animator, string parameterName) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.ResetTriggerSafely(parameterName);
-			else
-				animator.ResetTriggerSafely(parameterName);
-		}
-
 		public static void ResetTriggerSafely(this Animator animator, int parameterHash) {
 			if (animator.HasParameter(parameterHash))
 				animator.ResetTrigger(parameterHash);
-		}
-
-		public static void NetResetTriggerSafely(this Animator animator, int parameterHash) {
-			if (animator.gameObject.TryGetComponent(out NetworkAnimator networkSelf))
-				networkSelf.ResetTriggerSafely(parameterHash);
-			else
-				animator.ResetTriggerSafely(parameterHash);
 		}
 
 		public static void SetBoolSafely(this Animator animator, string parameterName, bool value) {
