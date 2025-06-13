@@ -16,6 +16,9 @@ namespace AbsoluteCommons.Runtime.AltInput {
 		}
 
 		private void Awake() {
+			if (Application.isEditor)
+				return;  // Only register controls when playing the game
+
 			InputMapper.AddControls(this);
 			Destroy(this);
 		}
