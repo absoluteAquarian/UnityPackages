@@ -10,6 +10,9 @@ namespace AbsoluteCommons.Runtime.AltInput {
 		private readonly Dictionary<KeyCode, int> _keyMap = new();
 
 		public InputMap DefineAxis(string name) {
+			if (_map.ContainsKey(name))
+				return this;  // Already defined
+
 			_map[name] = _states.Length;
 			Array.Resize(ref _states, _states.Length + 1);
 			Array.Resize(ref _raw, _raw.Length + 1);
@@ -17,6 +20,9 @@ namespace AbsoluteCommons.Runtime.AltInput {
 		}
 
 		public InputMap DefineKey(KeyCode key) {
+			if (_keyMap.ContainsKey(key))
+				return this;  // Already defined
+
 			_keyMap[key] = _states.Length;
 			Array.Resize(ref _states, _states.Length + 1);
 			Array.Resize(ref _raw, _raw.Length + 1);
