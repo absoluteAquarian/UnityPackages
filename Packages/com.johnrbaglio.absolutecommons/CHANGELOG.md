@@ -1,3 +1,6 @@
+# v1.0.4
+- Properly split editor and runtime code into different assemblies
+
 # v1.0.3
 - Updated the backend to support the Unity.InputSystem package, should it be active
 

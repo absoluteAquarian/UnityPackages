@@ -1,7 +1,9 @@
 {
-    "name": "AbsoluteCommons",
+    "name": "AbsoluteCommons.Editor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+		"AbsoluteCommons"
+	],
     "includePlatforms": [
         "Editor"
     ],
