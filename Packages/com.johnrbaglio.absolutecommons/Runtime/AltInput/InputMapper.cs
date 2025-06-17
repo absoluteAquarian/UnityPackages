@@ -6,7 +6,9 @@ using UnityEngine.PlayerLoop;
 namespace AbsoluteCommons.Runtime.AltInput {
 	public static class InputMapper {
 		private static InputMap _map;
+#pragma warning disable CS0414  // Field is assigned but its value is never used
 		private static bool _pendingUpdate;
+#pragma warning restore CS0414
 
 		public static void AddControls(MappedInputDatabase database) {
 			_map ??= new InputMap();
@@ -23,6 +25,7 @@ namespace AbsoluteCommons.Runtime.AltInput {
 		internal static void RequestUpdate() => _pendingUpdate = true;
 
 		private static bool ValidateInput() {
+#if !ENABLE_INPUT_SYSTEM
 			if (_map is null) {
 				Debug.LogError($"[InputMapper] {nameof(MappedInputDatabase)} resource was not found. Please add it via \"Create/Absolute Commons/Mapped Input Database\" either in the scene or in a Resources folder.");
 				return false;
@@ -34,6 +37,10 @@ namespace AbsoluteCommons.Runtime.AltInput {
 			}
 
 			return true;
+#else
+			Debug.LogWarning("[InputMapper] Legacy input handling is disabled.");
+			return false;
+#endif
 		}
 
 		public static float GetRaw(string name) => ValidateInput() ? _map.GetRaw(name) : 0;
@@ -58,12 +65,16 @@ namespace AbsoluteCommons.Runtime.AltInput {
 
 		[RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
 		private static void FindDatabaseResources() {
+#if !ENABLE_INPUT_SYSTEM
 			var resources = Resources.FindObjectsOfTypeAll<MappedInputDatabase>();
 
 			foreach (var resource in resources)
 				AddControls(resource);
 
 			LateUpdateHook.InjectIntoUpdateLoop();
+#else
+			Debug.LogWarning("[InputMapper] Legacy input handling is disabled while UnityEngine.InputSystem is enabled, skipping automatic initialization.");
+#endif
 		}
 	}
 

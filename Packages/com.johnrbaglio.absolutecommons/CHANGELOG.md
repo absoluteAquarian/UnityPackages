@@ -1,3 +1,6 @@
+# v1.0.3
+- Updated the backend to support the Unity.InputSystem package, should it be active
+
 # v1.0.2
 - Fixed a bug that caused MappedInputDatabase to throw errors in the Console while in in the Editor
 
