@@ -1,3 +1,6 @@
+# v1.0.6
+- Fixed missing meta files issue
+
 # v1.0.5
 - Added ReadOnlyIfTrueAttribute, Optional
 
