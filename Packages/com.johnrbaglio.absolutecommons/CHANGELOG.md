@@ -1,5 +1,5 @@
 #v1.0.5
-- Added ReadOnlyIfTrueAttribute
+- Added ReadOnlyIfTrueAttribute, Optional
 
 # v1.0.4
 - Properly split editor and runtime code into different assemblies
