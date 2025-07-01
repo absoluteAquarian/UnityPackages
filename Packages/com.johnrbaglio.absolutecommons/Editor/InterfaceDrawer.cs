@@ -45,7 +45,7 @@ namespace AbsoluteCommons.Editor {
 
 			// Handle the dropdown
 			int currentIndex = Mathf.Max(0, _fullNames.IndexOf(name));
-			int newIndex = EditorGUI.Popup(dropdown, "Type", currentIndex, _names.ToArray());
+			int newIndex = EditorGUI.Popup(dropdown, property.name, currentIndex, _names.ToArray());
 
 			Type type = _typesByName[_fullNames[newIndex]];
 			bool unityObject = typeof(UnityEngine.Object).IsAssignableFrom(type);
