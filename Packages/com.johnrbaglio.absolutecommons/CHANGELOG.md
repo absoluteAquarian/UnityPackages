@@ -1,3 +1,6 @@
+# v1.0.8
+- Attempted to fix InterfaceDrawer
+
 # v1.0.7
 - Added InterfaceDrawer
 
