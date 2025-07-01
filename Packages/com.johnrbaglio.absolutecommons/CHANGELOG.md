@@ -1,3 +1,6 @@
+# v1.0.7
+- Added InterfaceDrawer
+
 # v1.0.6
 - Fixed missing meta files issue
 
