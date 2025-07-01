@@ -64,7 +64,7 @@ namespace AbsoluteCommons.Editor {
 				}
 
 				// Show a Unity Object
-				var newPairedField = EditorGUI.ObjectField(position, label.text, property.objectReferenceValue, type, true);
+				var newPairedField = EditorGUI.ObjectField(position, label.text, pairedField, type, true);
 				if (newPairedField != pairedField) {
 					pairedFieldInfo?.SetValue(parent, newPairedField);
 					EditorUtility.SetDirty(parent);
