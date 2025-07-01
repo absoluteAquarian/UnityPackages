@@ -1,3 +1,6 @@
+# v1.0.13
+- Removed InterfaceDrawer in favor of using Unity-SerializeReferenceExtensions on GitHub instead
+
 # v1.0.8/.9/.10/.11/.12
 - Attempted to fix InterfaceDrawer
 
