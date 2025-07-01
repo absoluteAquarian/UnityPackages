@@ -25,13 +25,7 @@ namespace AbsoluteCommons.Editor {
 			_names = _fullNames.Select(static name => name.Split('.').Last()).ToList();
 		}
 
-		public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
-			object obj = property.managedReferenceValue;
-			if (obj is null)
-				return EditorGUIUtility.singleLineHeight * 2;
-
-			return EditorGUIUtility.singleLineHeight * 3 + EditorGUI.GetPropertyHeight(property, true);
-		}
+		public override float GetPropertyHeight(SerializedProperty property, GUIContent label) => property.managedReferenceValue is null ? EditorGUIUtility.singleLineHeight : EditorGUI.GetPropertyHeight(property, true);
 
 		public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
 			LoadDerivingTypes();
