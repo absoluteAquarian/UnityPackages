@@ -1,3 +1,6 @@
+# v1.0.14
+- Added ReadOnlyIfFalseAttribute
+
 # v1.0.13
 - Removed InterfaceDrawer in favor of using Unity-SerializeReferenceExtensions on GitHub instead
 
