@@ -26,7 +26,7 @@ namespace AbsoluteCommons.Editor {
 
 			bool enabled = conditionProperty.boolValue;
 
-			using var scope = new EditorGUI.DisabledGroupScope(!enabled);
+			using var scope = new EditorGUI.DisabledGroupScope(enabled);
 			EditorGUI.PropertyField(position, property, label, true);
 		}
 	}
