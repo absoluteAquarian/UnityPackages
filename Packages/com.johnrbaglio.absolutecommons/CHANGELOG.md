@@ -1,3 +1,6 @@
+# v1.0.15
+- Fixed a copy/paste bug in ReadOnlyIfTrueDrawer
+
 # v1.0.14
 - Added ReadOnlyIfFalseAttribute
 
